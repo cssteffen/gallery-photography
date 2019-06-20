@@ -1,0 +1,138 @@
+body {
+  font-family: "Myriad-pro", sans-serif;
+  /*font-size: 20px;*/
+  color: #363b52;
+  text-align: center;
+  /*line-height: 1.2;*/
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
+  line-height: 1.5;
+}
+
+header {
+  padding-top: 35px;
+}
+
+nav,
+footer {
+  padding: 0% 0;
+  background-color: #414245;
+  color: #bbb;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #bbb;
+}
+
+a:visited {
+  color: #bbb;
+}
+
+/*======NAVIGATION SECTION=======*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 60px;
+}
+
+ul {
+  display: inline-flex;
+  float: left;
+  list-style: none;
+}
+
+nav li {
+  padding: 5px;
+  margin-right: 3px;
+}
+.navLi li {
+  margin-right: 12px;
+  transform: skew(16deg);
+  padding: 5px;
+}
+.navLi li:hover {
+  color: #363b54;
+  background: #fff;
+}
+
+.noSkew {
+  transform: skew(-16deg);
+}
+
+.noSkew > a:hover {
+  color: #363b54;
+}
+
+.navContact {
+  float: right;
+  margin-right: 2%;
+}
+
+.fa:hover {
+  color: #e5a038;
+}
+
+.fa {
+  margin-right: 15px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 10px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+/*
+div.desc {
+  padding: 15px;
+  text-align: center;
+}*/
+
+/*======@MEDIA QUERIES (max-with: 767px)=======*/
+@media only screen and (max-width: 767px) {
+  .container > :nth-child().gallery {
+    width: 100%;
+  }
+  div.gallery {
+    width: 310px;
+  }
+}
+/*==============================================*/
+
+/*======@MEDIA QUERIES (min-with: 768px)=======*/
+@media only screen and (min-width: 768px) {
+  :nth-child().gallery {
+    width: 30%;
+  }
+  div.gallery {
+    width: 210px;
+  }
+}
+/*==============================================*/
